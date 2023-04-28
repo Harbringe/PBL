@@ -2,7 +2,9 @@ import java.util.*;
 
 public class User {
 
-    private String name;
+    private String fname;
+    private String lname;
+    private String username;
     private String email;
     private String pass;
     private String phno;
@@ -11,8 +13,10 @@ public class User {
     // Payment method pending
     private int type;
 
-    User(String name, String email, String pass, String phno, String ID, int type){
-        this.name = name;
+    public User(String fname, String lname, String username,String email, String pass, String phno, String ID, int type){
+        this.name = fname;
+        this.lname = lname;
+        this.usrname = username;
         this.email = email;
         this.pass = pass;
         this.phno = phno;
@@ -20,38 +24,53 @@ public class User {
         this.type = type;
     }
 
-    void setname(String name){
-        this.name=name;
+    void set_fname(String fname){
+        this.fname=fname;
     }   
-    String getname(String name){
-        return name;
+    String get_fname(String fname){
+        return fname;
+    }
+    
+    void set_lname(String lname){
+        this.lname=lname;
+    }   
+    String get_lname(String lname){
+        return lname;
+    }
+    
+    void set_username(String username){
+        this.username=username;
+    }   
+    String get_username(String username){
+        return username;
     }
 
-    void setemail(String email){
+
+    void set_email(String email){
         this.email=email;
     }   
-    String getemail(String email){
+    String get_email(String email){
         return email;
     }
 
-    void setpass(String pass){
+    void set_pass(String pass){
         this.pass=pass;
     }   
-    String getpass(String pass){
+    String get_pass(String pass){
         return pass;
     }
 
-    void setphno(String phno){
+    void set_phno(String phno){
         this.phno=phno;
     }   
-    String getphno(String phno){
+    String get_phno(String phno){
         return phno;
     }
 
-    void settype(int type){
+    void set_type(int type){
         this.type=type;
     }   
-    int gettype(int type){
+    int get_type(int type){
         return type;
     }    
 }
