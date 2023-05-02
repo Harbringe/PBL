@@ -78,9 +78,9 @@ public class Dbms {
 
     public void dbm(String[] args) throws SQLException {
     
-        String url = "jdbc:mysql://localhost:3306/userlist"; 
-        String uname = "root";
-        String pass = "H3artB3at";
+        String url = "jdbc:mysql://localhost:3306/..."; 
+        String uname = "YOUR_USERNAME_HERE";
+        String pass = "YOUR_PASSWORD_HERE";
         String query = "SELECT * FROM users";
         
         try{
