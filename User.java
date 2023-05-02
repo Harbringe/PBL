@@ -2,17 +2,21 @@ import java.util.*;
 
 public class User {
 
-    private String name;
+    private String first_name;
+    private String last_name;
+    private String user_name;
     private String email;
     private String pass;
-    private String phno;
+    private long phno;
     private final String ID;
 
     // Payment method pending
     private int type;
 
-    User(String name, String email, String pass, String phno, String ID, int type){
-        this.name = name;
+    User(String first_name,String last_name,String user_name, String email, String pass, long phno, String ID, int type){
+        this.first_name = first_name;
+        this.last_name = last_name;
+        this.user_name = user_name;
         this.email = email;
         this.pass = pass;
         this.phno = phno;
@@ -20,38 +24,56 @@ public class User {
         this.type = type;
     }
 
-    void setname(String name){
-        this.name=name;
-    }   
-    String getname(String name){
-        return name;
+    User(){
+        
     }
 
-    void setemail(String email){
+    void set_first_name(String first_name){
+        this.first_name=first_name;
+    }   
+    String get_first_name(String first_name){
+        return first_name;
+    }
+    
+    void set_last_name(String last_name){
+        this.last_name=last_name;
+    }   
+    String get_last_name(String last_name){
+        return last_name;
+    }
+    
+    void set_user_name(String user_name){
+        this.user_name=user_name;
+    }   
+    String get_user_name(String user_name){
+        return user_name;
+    }
+
+    void set_email(String email){
         this.email=email;
     }   
-    String getemail(String email){
+    String get_email(String email){
         return email;
     }
 
-    void setpass(String pass){
+    void set_pass(String pass){
         this.pass=pass;
     }   
-    String getpass(String pass){
+    String get_pass(String pass){
         return pass;
     }
 
-    void setphno(String phno){
+    void set_phno(long phno){
         this.phno=phno;
     }   
-    String getphno(String phno){
+    long get_phno(long phno){
         return phno;
     }
 
-    void settype(int type){
+    void set_type(int type){
         this.type=type;
     }   
-    int gettype(int type){
+    int get_type(int type){
         return type;
     }    
 }
