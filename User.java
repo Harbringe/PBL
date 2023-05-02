@@ -2,9 +2,15 @@ import java.util.*;
 
 public class User {
 
+<<<<<<< HEAD
     private String first_name;
     private String last_name;
     private String user_name;
+=======
+    private String fname;
+    private String lname;
+    private String username;
+>>>>>>> b18f62e05276cffb02bf50e979d8ae19a05a240d
     private String email;
     private String pass;
     private long phno;
@@ -13,10 +19,17 @@ public class User {
     // Payment method pending
     private int type;
 
+<<<<<<< HEAD
     User(String first_name,String last_name,String user_name, String email, String pass, long phno, String ID, int type){
         this.first_name = first_name;
         this.last_name = last_name;
         this.user_name = user_name;
+=======
+    public User(String fname, String lname, String username,String email, String pass, String phno, String ID, int type){
+        this.name = fname;
+        this.lname = lname;
+        this.usrname = username;
+>>>>>>> b18f62e05276cffb02bf50e979d8ae19a05a240d
         this.email = email;
         this.pass = pass;
         this.phno = phno;
@@ -24,6 +37,7 @@ public class User {
         this.type = type;
     }
 
+<<<<<<< HEAD
     User(){
         
     }
@@ -48,6 +62,29 @@ public class User {
     String get_user_name(String user_name){
         return user_name;
     }
+=======
+    void set_fname(String fname){
+        this.fname=fname;
+    }   
+    String get_fname(String fname){
+        return fname;
+    }
+    
+    void set_lname(String lname){
+        this.lname=lname;
+    }   
+    String get_lname(String lname){
+        return lname;
+    }
+    
+    void set_username(String username){
+        this.username=username;
+    }   
+    String get_username(String username){
+        return username;
+    }
+
+>>>>>>> b18f62e05276cffb02bf50e979d8ae19a05a240d
 
     void set_email(String email){
         this.email=email;
@@ -63,10 +100,17 @@ public class User {
         return pass;
     }
 
+<<<<<<< HEAD
     void set_phno(long phno){
         this.phno=phno;
     }   
     long get_phno(long phno){
+=======
+    void set_phno(String phno){
+        this.phno=phno;
+    }   
+    String get_phno(String phno){
+>>>>>>> b18f62e05276cffb02bf50e979d8ae19a05a240d
         return phno;
     }
 
