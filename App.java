@@ -1,10 +1,10 @@
 import java.util.Scanner;
 
 public class App extends User {
-    App(java.lang.String first_name, java.lang.String last_name, java.lang.String user_name, java.lang.String email,
-            java.lang.String pass, long phno, java.lang.String ID, int type) 
+    App(java.lang.String fname, java.lang.String lname, java.lang.String username, java.lang.String email,
+            java.lang.String pass, String phno, java.lang.String ID, int type) 
         {
-            super(first_name, last_name, user_name, email, pass, phno, ID, type);
+            super(fname, lname, username, email, pass, phno, ID, type);
         }
 
 
@@ -26,15 +26,15 @@ public class App extends User {
             try (Scanner scanner = new Scanner(System.in)) {
                 System.out.print(" Enter firstName => ");
                 String firstName = scanner.nextLine();
-                user.set_first_name(firstName);
+                user.set_fname(firstName);
     
                 System.out.print(" Enter lastName => ");
                 String lastName = scanner.nextLine();
-                user.set_last_name(lastName);
+                user.set_lname(lastName);
     
                 System.out.print(" Enter userName => ");
                 String userName = scanner.nextLine();
-                user.set_user_name(userName);
+                user.set_username(userName);
     
                 System.out.print(" Enter password => ");
                 String password = scanner.nextLine();
@@ -45,7 +45,7 @@ public class App extends User {
                 user.set_email(emailId);
     
                 System.out.print(" Enter phoneNo => ");
-                long phoneNo = scanner.nextLong();
+                String phoneNo = scanner.nextLine();
                 user.set_phno(phoneNo);
                 
                 System.out.print(" Enter type => ");
