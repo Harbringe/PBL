@@ -6,29 +6,20 @@ public class User {
     private String email;
     private String pass;
     private String phno;
-    private  String ID;
 
     // Payment method pending
     private int type;
 
-    public User(String fname, String lname, String username,String email, String pass, String phno, String ID, int type){
+    public User(String fname, String lname, String username,String email, String pass, String phno, int type){
         this.fname = fname;
         this.lname = lname;
         this.username = username;
         this.email = email;
         this.pass = pass;
         this.phno = phno;
-        this.ID = ID;
         this.type = type;
     }
 
-    void set_id(String ID){
-        this.ID = ID;
-    }
-
-    String get_id(){
-        return this.ID;
-    }
 
     void set_fname(String fname){
         this.fname=fname;
